@@ -5,12 +5,6 @@ import { Header } from "../components/Header";
 import { Task, TasksList } from "../components/TasksList";
 import { TodoInput } from "../components/TodoInput";
 
-interface Task {
-  id: number;
-  title: string;
-  done: boolean;
-}
-
 export function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
